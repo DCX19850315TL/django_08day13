@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>主机信息</h1>
+    <table border="1">
+    {% for item in data %}
+        <tr>
+            <td>{{ item.HostName }}</td>
+            <td>{{ item.IP }}</td>
+        </tr>
+    {% endfor %}
+    </table>
+    <div>总条数:{{ count }}</div>
+
+    <div>{{ page }}</div>
+</body>
+</html>
