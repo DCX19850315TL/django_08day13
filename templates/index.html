@@ -3,6 +3,22 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
     <title>Title</title>
+    <style>
+        body{
+            font-size: .85em;
+            color: red;
+            background-color: green;
+        }
+        #Pageing A{
+            background-color: cadetblue;
+            border: 1px solid white;
+            text-decoration: none;color: white;
+            padding: .1em .6em .2em .6em;
+        }
+        #Pageing A.selected{
+            background-color: brown;
+        }
+    </style>
 </head>
 <body>
     <h1>主机信息</h1>
@@ -16,6 +32,8 @@
     </table>
     <div>总条数:{{ count }}</div>
 
-    <div>{{ page }}</div>
+    <div id="Pageing">
+        {{ page }}
+    </div>
 </body>
 </html>
